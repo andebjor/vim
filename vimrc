@@ -175,6 +175,17 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
+" Airline config
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='solarized'
+" let g:airline#extensions#tabline#switch_buffers_and_tabs = 1
+" let g:airline#extensions#tabline#show_buffers = 1
+let g:airline#extensions#tabline#buffer_min_count = 2
+let g:airline#extensions#tabline#buffer_idx_mode = 1
+
+let g:airline#extensions#branch#enabled = 1
+
+
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
 
