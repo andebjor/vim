@@ -129,6 +129,8 @@ source $VIMRUNTIME/macros/matchit.vim
 " call AutoHighlightToggle()
 
 " syntax on
+let g:solarized_visibility="high"
+let g:solarized_italic=0
 syntax enable
 set background=dark
 colorscheme solarized

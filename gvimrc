@@ -29,7 +29,7 @@ set guicursor=n-v-c-i-ci:block-Cursor/lCursor,ve:ver35-Cursor,o:hor50-Cursor,r-c
 " how to display whitespace
 " set list listchars=trail:.,tab:>-
 set listchars=trail:.,tab:>-
-highlight SpecialKey guifg=black guibg=green
+" highlight SpecialKey guifg=black guibg=green
 set list
 
 if &diff
