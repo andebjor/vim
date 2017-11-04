@@ -14,7 +14,7 @@ map! <S-Insert> <C-R><C-*>
 set go-=m
 set go-=T
 set go-=r
-set go+=l
+" set go+=l
 
 " set lines=24
 set lines=70
