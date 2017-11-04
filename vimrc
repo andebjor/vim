@@ -51,6 +51,9 @@ inoremap <S-Tab> <C-d>
 " display whitespace by default
 " set list
 
+" NERD comment config
+let g:NERDSpaceDelims = 1
+
 " Copy and comment out a line
 map <silent> <Leader>r :let b:tmp_col=col(".")<CR>yypk<Leader>xj:call cursor(0, b:tmp_col)<CR>
 
