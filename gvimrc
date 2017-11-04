@@ -9,7 +9,7 @@ set vb t_vb=
 nmap <S-Insert> "*p
 map! <S-Insert> <C-R><C-*>
 
-syntax enable
+" syntax enable
 
 set go-=m
 set go-=T
@@ -23,7 +23,7 @@ set columns=80
 set guicursor=n-v-c-i-ci:block-Cursor/lCursor,ve:ver35-Cursor,o:hor50-Cursor,r-cr:hor20-Cursor/lCursor,sm:block-Cursor-blinkwait175-blinkoff150-blinkon175,a:blinkon0
 
 " DD/DD/DD background
-hi Normal                  guibg=#ffffff
+" hi Normal                  guibg=#ffffff
 
 
 " how to display whitespace

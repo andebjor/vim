@@ -136,7 +136,10 @@ source $VIMRUNTIME/macros/matchit.vim
 " Enable auto highlight
 " call AutoHighlightToggle()
 
-syntax on
+" syntax on
+syntax enable
+set background=dark
+colorscheme solarized
 
 " use american english by default
 set spelllang=en_us
