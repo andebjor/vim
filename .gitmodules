@@ -1,3 +1,6 @@
 [submodule "pack/andebjor/start/nerdcommenter"]
 	path = pack/andebjor/start/nerdcommenter
 	url = git@github.com:scrooloose/nerdcommenter.git
+[submodule "pack/andebjor/start/vim-fugitive"]
+	path = pack/andebjor/start/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git
