@@ -113,21 +113,10 @@ set expandtab           " Tabs are expanded to spaces
 set tabstop=4
 
 " backup and swap files
-if has("gui_running")
-    " set backupdir=./.backup,.
-    " set backupdir=/scratch/bjorn/vim/backup,./.backup,.
-    set backupdir=c:\scratch\vim\backup,./backup,.
-    " set directory=./.backup,.,/var/tmp,/tmp
-    " set directory=/scratch/bjorn/vim/swap,.
-    set directory=c:\scratch\vim\swap,.
-    " persistent undo
-    " set undodir=/scratch/bjorn/vim/undo
-    set undodir=c:\scratch\vim\undo
-else
-    set backupdir=/cygdrive/c/scratch/vim/backup,./backup,.
-    set directory=/cygdrive/c/scratch/vim/swap,.
-    set undodir=/cygdrive/c/scratch/vim/undo
-endif
+set backupdir=/scratch/bjorn/vim/backup,./.backup,.
+set directory=/scratch/bjorn/vim/swap,.
+" persistent undo
+set undodir=/scratch/bjorn/vim/undo
 set undofile
 
 
