@@ -145,16 +145,17 @@ let s:terms_noitalic=[
             \"iTerm.app",
             \"Apple_Terminal"
             \]
-if has("gui_running")
-    let s:terminal_italic=1 " TODO: could refactor to not require this at all
-else
-    let s:terminal_italic=0 " terminals will be guilty until proven compatible
-    for term in s:terms_italic
-        if $TERM_PROGRAM =~ term
-            let s:terminal_italic=1
-        endif
-    endfor
-endif
+" if has("gui_running")
+"     let s:terminal_italic=1 " TODO: could refactor to not require this at all
+" else
+"     let s:terminal_italic=0 " terminals will be guilty until proven compatible
+"     for term in s:terms_italic
+"         if $TERM_PROGRAM =~ term
+"             let s:terminal_italic=1
+"         endif
+"     endfor
+" endif
+let s:terminal_italic=0
 
 " }}}
 " Default option values"{{{
