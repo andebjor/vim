@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/bjorn/tmp/chrome'
+let g:netrw_dirhist_2='/home/bjorn/tmp/chrome/content'
+let g:netrw_dirhist_3='/home/bjorn/tmp/META-INF'
+let g:netrw_dirhist_4='/home/bjorn'
+let g:netrw_dirhist_5='/home/bjorn/.vim/pack/andebjor/start/vim-fugitive'
