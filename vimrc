@@ -32,6 +32,10 @@ set smartcase
 " for insert mode
 inoremap <S-Tab> <C-d>
 
+" walk over folded lines
+nmap <UP>   gk
+nmap <DOWN> gj
+
 " display whitespace by default
 " set list
 " F9 toggles list
