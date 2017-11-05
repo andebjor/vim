@@ -36,6 +36,9 @@ inoremap <S-Tab> <C-d>
 nmap <UP>   gk
 nmap <DOWN> gj
 
+" Show what line the cursor is at
+set cursorline
+
 " display whitespace by default
 " set list
 " F9 toggles list
