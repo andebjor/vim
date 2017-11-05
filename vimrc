@@ -167,6 +167,18 @@ let g:airline#extensions#tabline#buffer_idx_mode = 1
 
 let g:airline#extensions#branch#enabled = 1
 
+" Easy switching of buffers
+nmap <Leader>1 :b1<CR>
+nmap <Leader>2 :b2<CR>
+nmap <Leader>3 :b3<CR>
+nmap <Leader>4 :b4<CR>
+nmap <Leader>5 :b5<CR>
+nmap <Leader>6 :b6<CR>
+nmap <Leader>7 :b7<CR>
+nmap <Leader>8 :b8<CR>
+nmap <Leader>9 :b9<CR>
+
+
 " Tabular config
 if exists(":Tabularize")
     nmap <Leader>t= :Tabularize /=<CR>
