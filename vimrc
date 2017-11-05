@@ -185,6 +185,14 @@ let g:airline#extensions#tabline#buffer_idx_mode = 1
 
 let g:airline#extensions#branch#enabled = 1
 
+" Tabular config
+if exists(":Tabularize")
+    nmap <Leader>t= :Tabularize /=<CR>
+    vmap <Leader>t= :Tabularize /=<CR>
+    nmap <Leader>t: :Tabularize /:\zs<CR>
+    vmap <Leader>t: :Tabularize /:\zs<CR>
+endif
+
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")

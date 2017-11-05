@@ -10,3 +10,6 @@
 [submodule "pack/andebjor/start/vim-airline"]
 	path = pack/andebjor/start/vim-airline
 	url = git@github.com:vim-airline/vim-airline.git
+[submodule "pack/andebjor/start/tabular"]
+	path = pack/andebjor/start/tabular
+	url = git@github.com:godlygeek/tabular.git
