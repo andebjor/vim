@@ -4,13 +4,12 @@
 " set gfn=Symbol
 
 " turn off bell
-set vb t_vb=
+" set vb t_vb=
 
 nmap <S-Insert> "*p
 map! <S-Insert> <C-R><C-*>
 
-" syntax enable
-
+" Options for menys and stuff
 set go-=m
 set go-=T
 set go-=r
@@ -27,7 +26,6 @@ set guicursor=n-v-c-i-ci:block-Cursor/lCursor,ve:ver35-Cursor,o:hor50-Cursor,r-c
 
 
 " how to display whitespace
-" set list listchars=trail:.,tab:>-
 set listchars=trail:.,tab:>-
 " highlight SpecialKey guifg=black guibg=green
 set list

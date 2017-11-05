@@ -1,16 +1,3 @@
-
-" An example for a vimrc file.
-"
-" Maintainer:   Bram Moolenaar <Bram@vim.org>
-" Last change:  2002 May 28
-"
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"         for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"       for OpenVMS:  sys$login:.vimrc
-
-
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -20,9 +7,6 @@ set vb t_vb=
 
 " windows copy-paste stuff
 set clipboard=unnamed
-
-" load all plugins as bundles
-" call pathogen#infect()
 
 " options for Gundo
 " let g:gundo_width=30
@@ -50,6 +34,9 @@ inoremap <S-Tab> <C-d>
 
 " display whitespace by default
 " set list
+" F9 toggles list
+nmap <F9> :set invlist list?<CR>
+
 
 " NERD comment config
 let g:NERDSpaceDelims = 1
@@ -76,8 +63,13 @@ nmap <silent> <F5> gv:s/\([^[:space:]]\)\([=+-]\)\([^[:space:]]\)/\1 \2 \3/eg<CR
 " vmap <silent> <C-F4> DO#if 0 // TODO: vector size<ESC>o#else<CR>#endif<ESC>kP/#else<CR>:nohlsearch<CR>p
 " nmap <silent> <C-F4> ddO#if 0 // TODO: vector size<ESC>o#else<CR>#endif<ESC>kP/#else<CR>:nohlsearch<CR>p
 
+" Not used anymore, using NERD instead
+" "let g:EnhCommentifyRespectIndent = 'Yes'
+" let g:EnhCommentifyPretty = 'Yes'
+" " let g:EnhCommentifyUseBlockIndent = 'Yes'
+" " let g:EnhCommentifyMultiPartBlocks = 'yes'
+" " let g:EnhCommentifyCommentsOp = 'yes'
 
-nmap <F9> :set invlist list?<CR>
 
 " highlight column 81 and above
 let g:column_error = 0
@@ -95,12 +87,7 @@ endfunction
 
 nmap <F6> :call ToggleColumnError()<CR>
 
-"let g:EnhCommentifyRespectIndent = 'Yes'
-let g:EnhCommentifyPretty = 'Yes'
-" let g:EnhCommentifyUseBlockIndent = 'Yes'
-" let g:EnhCommentifyMultiPartBlocks = 'yes'
-" let g:EnhCommentifyCommentsOp = 'yes'
-
+" Taglist is no longer used
 " nnoremap <silent> <F8> :TlistToggle<CR>
 " let Tlist_Exit_OnlyWindow = 1
 " let Tlist_Use_Right_Window = 1
@@ -128,6 +115,8 @@ source $VIMRUNTIME/macros/matchit.vim
 " Enable auto highlight
 " call AutoHighlightToggle()
 
+
+" Set a nice color scheme
 " syntax on
 let g:solarized_visibility="high"
 let g:solarized_italic=0
@@ -144,34 +133,27 @@ set spelllang=en_us
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-set autoindent		" always set autoindenting on
+set autoindent " always set autoindenting on
 if has("vms")
-  set nobackup		" do not keep a backup file, use versions instead
+  set nobackup " do not keep a backup file, use versions instead
 else
-  set backup		" keep a backup file
+  set backup   " keep a backup file
 endif
-set history=50		" keep 50 lines of command line history
-set ruler		" show the cursor position all the time
-set showcmd		" display incomplete commands
-set incsearch		" do incremental searching
-
-" For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
-" let &guioptions = substitute(&guioptions, "t", "", "g")
+set history=50 " keep 50 lines of command line history
+set ruler      " show the cursor position all the time
+set showcmd    " display incomplete commands
+set incsearch  " do incremental searching
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
 "map E gqip
 map E gwip
 
-" This is an alternative that also works in block mode, but the deleted
-" text is lost and it only works for putting the current register.
-"vnoremap p "_dp
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
   "syntax on
-  "colorscheme murphy
   set hlsearch
 endif
 
@@ -204,12 +186,12 @@ if has("autocmd")
   filetype plugin indent on
 
   " For all text files set 'textwidth' to 78 characters.
-  autocmd FileType text setlocal textwidth=78
+  autocmd FileType text      setlocal textwidth=78
 
-  autocmd FileType plaintex setlocal textwidth=78
-  autocmd FileType tex setlocal textwidth=78
-  autocmd FileType tex setlocal nojoinspaces
-  autocmd FileType mail setlocal nojoinspaces
+  autocmd FileType plaintex  setlocal textwidth=78
+  autocmd FileType tex       setlocal textwidth=78
+  autocmd FileType tex       setlocal nojoinspaces
+  autocmd FileType mail      setlocal nojoinspaces
 
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
