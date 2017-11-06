@@ -47,6 +47,10 @@ nmap <F9> :set invlist list?<CR>
 
 " NERD comment config
 let g:NERDSpaceDelims = 1
+let g:NERDCreateDefaultMappings = 0
+map <Leader>x  <plug>NERDCommenterToggle
+map <Leader>cc <plug>NERDCommenterComment
+map <Leader>cu <plug>NERDCommenterUncomment
 
 " Copy and comment out a line
 map <silent> <Leader>r :let b:tmp_col=col(".")<CR>yypk<Leader>xj:call cursor(0, b:tmp_col)<CR>
