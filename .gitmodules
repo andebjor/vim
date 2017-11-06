@@ -13,3 +13,6 @@
 [submodule "pack/andebjor/start/tabular"]
 	path = pack/andebjor/start/tabular
 	url = https://github.com/godlygeek/tabular.git
+[submodule "pack/andebjor/start/vim-gitgutter"]
+	path = pack/andebjor/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
