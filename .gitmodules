@@ -1,15 +1,15 @@
 [submodule "pack/andebjor/start/nerdcommenter"]
 	path = pack/andebjor/start/nerdcommenter
-	url = git@github.com:scrooloose/nerdcommenter.git
+	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule "pack/andebjor/start/vim-fugitive"]
 	path = pack/andebjor/start/vim-fugitive
-	url = git@github.com:tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule "pack/andebjor/start/vim-airline-themes"]
 	path = pack/andebjor/start/vim-airline-themes
-	url = git@github.com:vim-airline/vim-airline-themes.git
+	url = https://github.com/vim-airline/vim-airline-themes.git
 [submodule "pack/andebjor/start/vim-airline"]
 	path = pack/andebjor/start/vim-airline
-	url = git@github.com:vim-airline/vim-airline.git
+	url = https://github.com/vim-airline/vim-airline.git
 [submodule "pack/andebjor/start/tabular"]
 	path = pack/andebjor/start/tabular
-	url = git@github.com:godlygeek/tabular.git
+	url = https://github.com/godlygeek/tabular.git
