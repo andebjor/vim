@@ -216,6 +216,13 @@ if has("autocmd")
   autocmd FileType tex       setlocal nojoinspaces
   autocmd FileType mail      setlocal nojoinspaces
 
+  autocmd BufWinEnter * let &foldlevel = max(map(range(1, line('$')), 'foldlevel(v:val)'))
+
+  augroup XML
+    autocmd!
+    autocmd FileType xml setlocal foldmethod=indent
+  augroup END
+
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
   " (happens when dropping a file on gvim).
