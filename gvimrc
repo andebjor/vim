@@ -32,5 +32,11 @@ if &diff
   let &columns = 275 + 2*&foldcolumn + 1
 endif
 
+
+" fix for shell on windows
+set shell=C:\WINDOWS\system32\cmd.exe
+set shellcmdflag=/c
+set shellxquote=(
+
 " common viminfo file
 set viminfo+=n~/.viminfo
