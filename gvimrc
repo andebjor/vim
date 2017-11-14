@@ -4,7 +4,7 @@
 " set gfn=Symbol
 
 " turn off bell
-" set vb t_vb=
+set vb t_vb=
 
 nmap <S-Insert> "*p
 map! <S-Insert> <C-R><C-*>
