@@ -98,12 +98,12 @@ endfunction
 
 nmap <F6> :call ToggleColumnError()<CR>
 
-" Taglist is no longer used
-" nnoremap <silent> <F8> :TlistToggle<CR>
-" let Tlist_Exit_OnlyWindow = 1
-" let Tlist_Use_Right_Window = 1
-" let Tlist_Use_SingleClick = 1
-" let Tlist_Sort_Type = "name"
+" Taglist options
+nnoremap <silent> <F8> :TlistToggle<CR>
+let Tlist_Exit_OnlyWindow = 1
+let Tlist_Use_Right_Window = 1
+let Tlist_Use_SingleClick = 1
+let Tlist_Sort_Type = "name"
 
 set scrolloff=5
 set nopaste
