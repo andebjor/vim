@@ -113,6 +113,10 @@ set shiftwidth=4        " Indentation width when using >> and << re-indentation
 set expandtab           " Tabs are expanded to spaces
 set tabstop=4
 
+" Scrolling in insert mode
+inoremap <C-e> <C-x><C-E>
+inoremap <C-y> <C-x><C-Y>
+
 " backup and swap files
 set backupdir=/scratch/bjorn/vim/backup,./.backup,.
 set directory=/scratch/bjorn/vim/swap,.
