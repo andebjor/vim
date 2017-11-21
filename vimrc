@@ -172,6 +172,11 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
+" mouse scrolling inside terminal/tmux
+if !has("gui_running")
+    set mouse=a
+endif
+
 " Airline config
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='solarized'
