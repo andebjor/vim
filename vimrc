@@ -227,6 +227,11 @@ if has("autocmd")
     autocmd FileType xml setlocal foldmethod=indent
   augroup END
 
+  augroup markdown
+    autocmd!
+    autocmd FileType markdown setlocal textwidth=78 spell
+  augroup END
+
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
   " (happens when dropping a file on gvim).
