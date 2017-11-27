@@ -54,7 +54,7 @@ map <Leader>cc <plug>NERDCommenterComment
 map <Leader>cu <plug>NERDCommenterUncomment
 
 " Copy and comment out a line
-map <silent> <Leader>r :let b:tmp_col=col(".")<CR>yypk<Leader>xj:call cursor(0, b:tmp_col)<CR>
+map <silent> <Leader>r :let b:tmp_col=col(".")<CR>yypk<Leader>xj:call cursor(0, b:tmp_col)<CR>i
 
 " Fix whitespace around =+- and ,
 vmap <silent> <F5> :s/\([^[:space:]]\)\([=+-]\)\([^[:space:]]\)/\1 \2 \3/eg<CR>gv:s/\([^[:space:]]\),\([^[:space:]]\)/\1, \2/eg<CR>
