@@ -40,7 +40,8 @@ nmap <DOWN> gj
 set cursorline
 
 " display whitespace by default
-" set list
+set listchars=trail:.,tab:>-
+set list
 " F9 toggles list
 nmap <F9> :set invlist list?<CR>
 

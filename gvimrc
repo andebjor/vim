@@ -26,9 +26,7 @@ set guicursor=n-v-c-i-ci:block-Cursor/lCursor,ve:ver35-Cursor,o:hor50-Cursor,r-c
 
 
 " how to display whitespace
-set listchars=trail:.,tab:>-
 " highlight SpecialKey guifg=black guibg=green
-set list
 
 if &diff
   let &columns = 275 + 2*&foldcolumn + 1
