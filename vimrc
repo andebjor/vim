@@ -21,6 +21,8 @@ set clipboard=unnamed
 " use alt+<left,right> for tag jumping
 " map <M-Right> <C-]>
 " map <M-Left>  <C-T>
+" ask if there is more than one tag matching
+nnoremap <C-]> g<C-]>
 
 " ignore case in search if lower case is given
 set ignorecase
