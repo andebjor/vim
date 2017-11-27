@@ -104,6 +104,7 @@ function ToggleColumnError()
       let g:column_error = 0
       echo "Column error off"
    else
+      " match ErrorMsg '\%>80v.\+'
       match ErrorMsg '\%>80v.\+'
       let g:column_error = 1
       echo "Column error on"
@@ -281,6 +282,11 @@ if has("autocmd")
     autocmd FileType gitcommit let g:solarized_visibility="normal"
     autocmd FileType gitcommit colorscheme solarized
     autocmd FileType gitcommit highlight SpellBad cterm=underline ctermfg=red
+  augroup END
+
+  augroup python
+    autocmd!
+    autocmd FileType python setlocal textwidth=100
   augroup END
 
   " When editing a file, always jump to the last known cursor position.
