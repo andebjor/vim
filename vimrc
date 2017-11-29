@@ -50,6 +50,9 @@ nmap <F9> :set invlist list?<CR>
 
 " NERD comment config
 let g:NERDSpaceDelims = 1
+let g:NERDCommentEmptyLines = 1
+let g:NERDTrimTrailingWhitespace = 1
+let g:NERDDefaultAlign = 'start'
 let g:NERDCreateDefaultMappings = 0
 map <Leader>x  <plug>NERDCommenterToggle
 map <Leader>cc <plug>NERDCommenterComment
