@@ -246,6 +246,9 @@ if has("autocmd")
   augroup gitcommit
     autocmd!
     autocmd FileType gitcommit setlocal spell
+    " don't scream read one whitepace errors in log messages
+    autocmd FileType gitcommit let g:solarized_visibility="normal"
+    autocmd FileType gitcommit colorscheme solarized
   augroup END
 
   " When editing a file, always jump to the last known cursor position.
