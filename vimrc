@@ -47,6 +47,9 @@ set list
 " F9 toggles list
 nmap <F9> :set invlist list?<CR>
 
+" check one time after 4s of inactivity in normal mode
+set autoread
+au CursorHold * checktime
 
 " NERD comment config
 let g:NERDSpaceDelims = 1
