@@ -147,9 +147,13 @@ let g:solarized_italic=0
 syntax enable
 set background=dark
 colorscheme solarized
+highlight SpellBad cterm=underline ctermfg=red
 
 " use american english by default
 set spelllang=en_us
+
+" toggle spell
+map <F4> :setlocal spell!<CR>
 
 " Nice make wrapper
 " :command -nargs=* Make make <args> | cwindow 3
@@ -252,6 +256,7 @@ if has("autocmd")
     " don't scream read one whitepace errors in log messages
     autocmd FileType gitcommit let g:solarized_visibility="normal"
     autocmd FileType gitcommit colorscheme solarized
+    autocmd FileType gitcommit highlight SpellBad cterm=underline ctermfg=red
   augroup END
 
   " When editing a file, always jump to the last known cursor position.
