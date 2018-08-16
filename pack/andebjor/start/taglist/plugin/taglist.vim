@@ -56,6 +56,12 @@
 "
 " ****************** Do not modify after this line ************************
 
+" It doesn't work with gvim unless it it started from a cygwin terminal due to
+" ctags.exe not being in the PATH otherwise
+if has("gui_running") && !executable('ctags')
+    finish
+endif
+
 " Line continuation used here
 if !exists('s:cpo_save')
     " If the taglist plugin is sourced recursively, the 'cpo' setting will be
