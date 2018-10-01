@@ -129,10 +129,10 @@ inoremap <C-e> <C-x><C-E>
 inoremap <C-y> <C-x><C-Y>
 
 " backup and swap files
-set backupdir=/scratch/bjorn/vim/backup,./.backup,.
-set directory=/scratch/bjorn/vim/swap,.
+set backupdir=$HOME/.vim/saves/backup,./.backup,.
+set directory=$HOME/.vim/saves/swap,.
 " persistent undo
-set undodir=/scratch/bjorn/vim/undo
+set undodir=$HOME/.vim/saves/undo
 set undofile
 
 
