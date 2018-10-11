@@ -220,6 +220,13 @@ if exists(":Tabularize")
     vmap <Leader>t: :Tabularize /:\zs<CR>
 endif
 
+" Re-generate spell files, if needed
+for d in glob('~/.vim/spell/*.add', 1, 1)
+    if filereadable(d) && (!filereadable(d . '.spl') || getftime(d) > getftime(d . '.spl'))
+        silent exec 'mkspell! ' . fnameescape(d)
+    endif
+endfor
+
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
