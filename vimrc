@@ -5,7 +5,7 @@ set nocompatible
 " turn off bell
 set vb t_vb=
 
-" windows copy-paste stuff
+" Nice copy-paste for both X11 and windows
 set clipboard=unnamed
 
 " options for Gundo
