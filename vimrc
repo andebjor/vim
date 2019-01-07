@@ -50,8 +50,6 @@ nmap <F9> :set invlist list?<CR>
 " check one time after 4s of inactivity in normal mode
 set autoread
 au CursorHold * checktime
-" check when regaining focus
-au FocusGained,BufEnter * :silent! !
 
 " NERD comment config
 let g:NERDSpaceDelims = 1
