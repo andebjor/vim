@@ -123,6 +123,7 @@ nnoremap <silent> <F7> :nohlsearch<CR>
 set shiftwidth=4        " Indentation width when using >> and << re-indentation
 set expandtab           " Tabs are expanded to spaces
 set tabstop=4
+set nojoinspaces        " Don't want the double spaces when joining sentences
 
 " Scrolling in insert mode
 inoremap <C-e> <C-x><C-E>
