@@ -23,3 +23,9 @@ middlewares
 Django
 Mattermost
 Artifactory
+CSP
+artifactory
+buildable
+installable
+executables
+recurses
