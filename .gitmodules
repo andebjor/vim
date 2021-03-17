@@ -16,3 +16,9 @@
 [submodule "pack/andebjor/start/vim-gitgutter"]
 	path = pack/andebjor/start/vim-gitgutter
 	url = git@github.com:andebjor/vim-gitgutter.git
+[submodule "pack/andebjor/start/fzf.vim"]
+	path = pack/andebjor/start/fzf.vim
+	url = git@github.com:junegunn/fzf.vim.git
+[submodule "pack/andebjor/start/fzf"]
+	path = pack/andebjor/start/fzf
+	url = git@github.com:junegunn/fzf.git
