@@ -38,6 +38,11 @@ inoremap <S-Tab> <C-d>
 nmap <UP>   gk
 nmap <DOWN> gj
 
+" Buffer navigation mappings
+nnoremap <C-f> :bprevious<CR>
+nnoremap <C-g> :bnext<CR>
+nnoremap <Leader>n <C-^>
+
 " Show what line the cursor is at
 set cursorline
 
