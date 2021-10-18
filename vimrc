@@ -278,10 +278,10 @@ if has("autocmd")
     autocmd FileType gitcommit highlight SpellBad cterm=underline ctermfg=red
   augroup END
 
-  augroup python
-    autocmd!
-    autocmd FileType python setlocal textwidth=100
-  augroup END
+"   augroup python
+"     autocmd!
+"     autocmd FileType python setlocal textwidth=100
+"   augroup END
 
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
