@@ -2,6 +2,7 @@
 " set gfn=-misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso8859-1
 " set gfn=MiscFixed13
 " set gfn=Symbol
+set gfn=Courier_New:h10:cANSI:qDRAFT
 
 " turn off bell
 set vb t_vb=
@@ -26,7 +27,7 @@ set guicursor=n-v-c-i-ci:block-Cursor/lCursor,ve:ver35-Cursor,o:hor50-Cursor,r-c
 
 
 " how to display whitespace
-" highlight SpecialKey guifg=black guibg=green
+highlight SpecialKey guifg=black guibg=green
 
 if &diff
   let &columns = 275 + 2*&foldcolumn + 1
@@ -39,4 +40,4 @@ set shellcmdflag=/c
 set shellxquote=(
 
 " common viminfo file
-set viminfo+=n~/.viminfo
+"set viminfo+=n~/.viminfo
