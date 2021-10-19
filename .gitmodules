@@ -21,4 +21,4 @@
 	url = git@github.com:junegunn/fzf.vim.git
 [submodule "pack/andebjor/start/fzf"]
 	path = pack/andebjor/start/fzf
-	url = git@github.com:junegunn/fzf.git
+	url = git@github.com:andebjor/fzf.git

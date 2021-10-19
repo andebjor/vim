@@ -8,6 +8,9 @@ set vb t_vb=
 " Nice copy-paste for both X11 and windows
 set clipboard=unnamed
 
+" options for FZF
+let g:fzf_cygwin = 1
+
 " options for Gundo
 " let g:gundo_width=30
 " let g:gundo_preview_bottom=1
