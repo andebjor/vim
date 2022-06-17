@@ -76,8 +76,14 @@ map <silent> <Leader>r :let b:tmp_col=col(".")<CR>yypk<Leader>xj:call cursor(0, 
 vmap <silent> <F5> :s/\([^[:space:]]\)\([=+-]\)\([^[:space:]]\)/\1 \2 \3/eg<CR>gv:s/\([^[:space:]]\),\([^[:space:]]\)/\1, \2/eg<CR>
 nmap <silent> <F5> gv:s/\([^[:space:]]\)\([=+-]\)\([^[:space:]]\)/\1 \2 \3/eg<CR>gv:s/\([^[:space:]]\),\([^[:space:]]\)/\1, \2/eg<CR>
 
+" use american english by default
+set spelllang=en_us
+
+" toggle spell
+map <F4> :setlocal spell!<CR>
+
 " comment out a region with #if 0/#endif
-" vmap <silent> <F4> DO#if 0<ESC>o#endif<ESC>P
+vmap <silent> <F4> DO<ESC>0i#if 0<ESC>o<ESC>0i#endif<ESC>P
 " nmap <silent> <F4> ddO#if 0<ESC>o#endif<ESC>P
 
 " comment out a region with #if 0/#endif, and add an empty #else clause
@@ -169,12 +175,6 @@ syntax enable
 set background=dark
 colorscheme solarized
 highlight SpellBad cterm=underline ctermfg=red
-
-" use american english by default
-set spelllang=en_us
-
-" toggle spell
-map <F4> :setlocal spell!<CR>
 
 " Nice make wrapper
 " :command -nargs=* Make make <args> | cwindow 3
