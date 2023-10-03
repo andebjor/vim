@@ -2,7 +2,8 @@
 " set gfn=-misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso8859-1
 " set gfn=MiscFixed13
 " set gfn=Symbol
-set gfn=Courier_New:h10:cANSI:qDRAFT
+" set gfn=Courier_New:h10:cANSI:qDRAFT
+set guifont="DejaVu Sans Mono 10"
 
 " turn off bell
 set vb t_vb=
