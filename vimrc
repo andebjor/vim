@@ -9,7 +9,7 @@ set vb t_vb=
 set clipboard=unnamed
 
 " options for FZF
-let g:fzf_cygwin = 1
+" let g:fzf_cygwin = 1
 
 " options for Gundo
 " let g:gundo_width=30
