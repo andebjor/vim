@@ -173,6 +173,7 @@ let g:solarized_visibility="high"
 let g:solarized_italic=0
 syntax enable
 set background=dark
+let g:solarized_termcolors=256
 colorscheme solarized
 highlight SpellBad cterm=underline ctermfg=red
 
