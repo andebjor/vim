@@ -22,3 +22,9 @@
 [submodule "pack/andebjor/start/fzf"]
 	path = pack/andebjor/start/fzf
 	url = git@github.com:andebjor/fzf.git
+[submodule "pack/andebjor/start/vim-mark"]
+	path = pack/andebjor/start/vim-mark
+	url = git@github.com:inkarkat/vim-mark.git
+[submodule "pack/andebjor/start/vim-ingo-library"]
+	path = pack/andebjor/start/vim-ingo-library
+	url = git@github.com:inkarkat/vim-ingo-library.git
