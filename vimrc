@@ -6,7 +6,7 @@ set nocompatible
 set vb t_vb=
 
 " Nice copy-paste for both X11 and windows
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 " options for FZF
 " let g:fzf_cygwin = 1
@@ -84,15 +84,15 @@ map <F4> :setlocal spell!<CR>
 
 " comment out a region with #if 0/#endif
 vmap <silent> <F4> DO<ESC>0i#if 0<ESC>o<ESC>0i#endif<ESC>P
-" nmap <silent> <F4> ddO#if 0<ESC>o#endif<ESC>P
+nmap <silent> <F4> ddO#if 0<ESC>o#endif<ESC>P
 
 " comment out a region with #if 0/#endif, and add an empty #else clause
 " vmap <silent> <S-F4> DO#if 0<ESC>o#else<CR>#endif<ESC>kP/#else<CR>:nohlsearch<CR>
 " nmap <silent> <S-F4> ddO#if 0<ESC>o#else<CR>#endif<ESC>kP/#else<CR>:nohlsearch<CR>
 
 " comment out a region with #if 0/#endif, and add an identical #else clause
-" vmap <silent> <C-F4> DO#if 0<ESC>o#else<CR>#endif<ESC>kP/#else<CR>:nohlsearch<CR>p
-" nmap <silent> <C-F4> ddO#if 0<ESC>o#else<CR>#endif<ESC>kP/#else<CR>:nohlsearch<CR>p
+vmap <silent> <C-F4> S#if 0<CR>#else<CR>#endif<CR><ESC>kkP/#else<CR>:nohlsearch<CR>p
+nmap <silent> <C-F4> S#if 0<CR>#else<CR>#endif<CR><ESC>kkPjp
 " temporary: add a special string
 " vmap <silent> <C-F4> DO#if 0 // TODO: vector size<ESC>o#else<CR>#endif<ESC>kP/#else<CR>:nohlsearch<CR>p
 " nmap <silent> <C-F4> ddO#if 0 // TODO: vector size<ESC>o#else<CR>#endif<ESC>kP/#else<CR>:nohlsearch<CR>p
